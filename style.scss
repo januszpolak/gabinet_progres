@@ -14,6 +14,43 @@ body {
     font-family: $main-font;
 }
 
+.call_me {
+    display: none;
+
+    @media(max-width: 1190px) {
+        display: block;
+        width: 70px;
+        height: auto;
+        position: fixed;
+        bottom: 5%;
+        left: 3%;
+        z-index: 5;
+        animation: pulse 4s infinite;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: rotateZ(0);
+        }
+
+        25% {
+            transform: rotateZ(45deg);
+        }
+
+        50% {
+            transform: rotateZ(-45deg);
+        }
+
+        75% {
+            transform: rotateZ(0);
+        }
+
+        100% {
+            transform: rotateZ(0);
+        }
+    }
+}
+
 .mobile-nav {
     display: block;
     position: absolute;
@@ -71,7 +108,6 @@ body {
         transition: .3s;
         z-index: 5;
 
-
     }
 }
 
@@ -106,7 +142,8 @@ body {
     @media (max-width: 1190px) {
         flex-direction: column;
         height: 100vh;
-        justify-content: space-around;
+        justify-content: flex-start;
+        padding-top: 10vh;
     }
 
     &__logo {
@@ -114,6 +151,8 @@ body {
 
         @media (max-width: 1190px) {
             padding-left: 0;
+            padding-bottom: 5vh;
+
         }
     }
 
@@ -122,6 +161,8 @@ body {
 
         @media (max-width: 1190px) {
             width: 80%;
+            font-size: 20px;
+            padding-bottom: 5vh;
         }
     }
 
