@@ -143,7 +143,7 @@ body {
         flex-direction: column;
         height: 100vh;
         justify-content: flex-start;
-        padding-top: 10vh;
+        padding-top: 5vh;
     }
 
     &__logo {
@@ -151,7 +151,7 @@ body {
 
         @media (max-width: 1190px) {
             padding-left: 0;
-            padding-bottom: 5vh;
+            padding-bottom: 10vh;
 
         }
     }
@@ -162,7 +162,7 @@ body {
         @media (max-width: 1190px) {
             width: 80%;
             font-size: 20px;
-            padding-bottom: 5vh;
+            padding-bottom: 10vh;
         }
     }
 
